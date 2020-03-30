@@ -1,0 +1,35 @@
+.main-sobre {
+   width: 100%;
+   max-width: 940px;
+   margin: 0 auto;
+   padding: 20px 15px;
+   .title {
+      font-family: $font-primary;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: $color-primary-dark;
+      margin-bottom: 20px;
+   }
+   .subtitle {
+      font-family: $font-primary;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary-dark;
+      margin-bottom: 20px;
+   }
+   .text {
+      font-family: $font-primary;
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 2.8rem;
+      color: $color-third-dark;
+      margin-bottom: 30px;
+   }
+
+   @include mq(sm) {
+      padding: 20px;
+   }
+   @include mq(lg) {
+      padding: 20px 0;
+   }
+}

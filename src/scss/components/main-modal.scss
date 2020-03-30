@@ -1,0 +1,21 @@
+.main-modal {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.6);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   opacity: 0;
+   z-index: 10;
+   transition: all 5s linear;
+   &.-show {
+      display: flex;
+      opacity: 1;
+      transition: all 5s linear;
+   }
+}

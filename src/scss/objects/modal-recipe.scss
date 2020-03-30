@@ -1,0 +1,61 @@
+.modal-recipe {
+   position: relative;
+   width: 100%;
+   max-width: 660px;
+   height: auto;
+   margin: 0 10px;
+   border-radius: 16px;
+   font-family: $font-primary;
+   background-color: $color-primary-clear;
+   padding: 15px;
+   text-align: center;
+   .image {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      margin-bottom: 20px;
+      img {
+         border-radius: 15px;
+      }
+   }
+   .name {
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: $color-primary-dark;
+      margin-bottom: 5px;
+   }
+   .chef {
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: $color-secondy-medium;
+      margin-bottom: 40px;
+   }
+   .btn-close {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: $color-third-medium;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+   }
+
+   @include mq(sm) {
+      padding: 20px;
+   }
+   @include mq(md) {
+      padding: 30px;
+      height: 413px;
+      .chef {
+         margin-bottom: 0;
+      }   
+      .btn-close {
+         position: absolute;
+         left: 50%;
+         bottom: 0;
+         transform: translateX(-50%) translateY(-25px);
+         bottom: 0;
+      }
+   }
+}

@@ -1,0 +1,11 @@
+.wrap-header {
+   width: 100%;
+   padding: 20px;
+
+   @include mq(md) {
+      padding: 30px 20px;
+   }
+   @include mq(lg) {
+      padding: 30px 0;
+   }
+}

@@ -1,0 +1,14 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $color-primary-clear;
+    color: $color-primary-dark;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} 

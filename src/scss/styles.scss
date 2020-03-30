@@ -1,0 +1,32 @@
+// importando pasta settings
+@import "settings/breaks.scss";
+@import "settings/colors.scss";
+@import "settings/fonts.scss";
+
+// importando pasta tools
+@import "tools/mymixins.scss";
+
+// importando pasta generic
+@import "generic/reset.scss";
+@import "generic/myreset.scss";
+
+// importando pasta base
+@import "base/styles.scss";
+
+// importando pasta objects
+@import "objects/wrap-header.scss";
+@import "objects/brand-navbar.scss";
+@import "objects/nav-bar.scss";
+@import "objects/wrap-footer.scss";
+@import "objects/wrap-banner.scss";
+@import "objects/card-recipe.scss";
+@import "objects/modal-recipe.scss";
+@import "objects/wrap-sobre.scss";
+
+// importando pasta components
+@import "components/main-navbar.scss";
+@import "components/main-footer.scss";
+@import "components/main-banner.scss";
+@import "components/main-recipes.scss";
+@import "components/main-sobre.scss";
+@import "components/main-modal.scss";
