@@ -1,0 +1,53 @@
+.main-detail {
+   width: 100%;
+   max-width: 940px;
+   margin: 0 auto;
+   .image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+   }
+   .title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: $color-primary-dark;
+      text-align: center;
+      margin-bottom: 5px;
+   }
+   .chef {
+      font-size: 2rem;
+      font-weight: normal;
+      color: $color-secondy-medium;
+      margin-bottom: 50px;
+      text-align: center;
+   }
+   .subtitle {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: $color-primary-dark;
+      margin-bottom: 20px;
+   }
+   .toggle {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: $color-third-medium;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+   }
+
+   @include mq(sm) {
+      // .title {
+      //    width: 100%;
+      //    align-self: flex-start;
+      // }
+   }
+   @include mq(lg) {
+      .image {
+         border-radius: 15px;
+      }
+   }
+
+}

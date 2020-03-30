@@ -1,8 +1,8 @@
-# Foodfy – Front End
+# Foodfy – Back End
 
-Treinamento de Front-end baseado nos desafios do curso Lauchbase da Rocketseat
+Treinamento de Back-end baseado nos desafios do curso Lauchbase da Rocketseat
 
-## Treinamento relizando desafio front-end Lauchbase da Rocketseat usando minhas habilidades anteriores e as ferramentas e recursos abaixo:
+## Treinamento relizando desafio back-end Lauchbase da Rocketseat usando ferramentas e recursos abaixo:
 
 * Editor: VSCode
 * Bundler: npm/Gulp
@@ -10,3 +10,5 @@ Treinamento de Front-end baseado nos desafios do curso Lauchbase da Rocketseat
 * Código: HTML5 | CSS3 | JS Vanilla
 * Pré-processador CSS: SASS
 * Metologia de organização CSS: ITCSS/RSCSS
+* Servidor: Node.js
+* Template Engine: Nunjucks

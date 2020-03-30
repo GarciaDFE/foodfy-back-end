@@ -481,3 +481,41 @@ img {
     display: flex;
     opacity: 1;
     transition: all 5s linear; }
+
+.main-detail {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto; }
+  .main-detail .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; }
+  .main-detail .title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 5px; }
+  .main-detail .chef {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #777777;
+    margin-bottom: 50px;
+    text-align: center; }
+  .main-detail .subtitle {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 20px; }
+  .main-detail .toggle {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #999999;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent; }
+  @media (min-width: 992px) {
+    .main-detail .image {
+      border-radius: 15px; } }
