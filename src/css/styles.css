@@ -485,37 +485,65 @@ img {
 .main-detail {
   width: 100%;
   max-width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
   .main-detail .image {
     width: 100%;
     height: auto;
     margin-bottom: 30px; }
   .main-detail .title {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     font-weight: bold;
     color: #111111;
     text-align: center;
     margin-bottom: 5px; }
   .main-detail .chef {
-    font-size: 2rem;
+    font-size: 1.8em;
     font-weight: normal;
     color: #777777;
-    margin-bottom: 50px;
     text-align: center; }
   .main-detail .subtitle {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #111111;
-    margin-bottom: 20px; }
+    margin: 50px 0 20px;
+    padding-right: 15px; }
   .main-detail .toggle {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: normal;
+    text-transform: uppercase;
     color: #999999;
+    background-color: transparent;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    outline: none;
-    background-color: transparent; }
+    outline: none; }
+    .main-detail .toggle:hover {
+      color: #000000; }
+  .main-detail .items-list {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin-left: 20px; }
+    .main-detail .items-list .item {
+      font-size: 1.6rem;
+      font-weight: normal;
+      line-height: 2.6rem; }
+  .main-detail .info {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2.6rem;
+    margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .main-detail .title {
+      font-size: 3.6rem; }
+    .main-detail .chef {
+      font-size: 2em; }
+    .main-detail .subtitle {
+      font-size: 2.4rem; }
+    .main-detail .items-list .item {
+      font-size: 1.8rem; } }
   @media (min-width: 992px) {
     .main-detail .image {
       border-radius: 15px; } }
