@@ -4,7 +4,8 @@
   "description": "Treinamento back-end Lauchbase da Rocketseat",
   "main": "index.js",
   "engines": {
-    "node": "12.14.1"
+    "node": "12.14.1",
+    "npm": "6.13.4"
   },
   "scripts": {
     "start": "nodemon server.js"
