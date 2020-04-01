@@ -2,7 +2,7 @@
 
 Treinamento de desenvolvimento front-end e back-end baseado nos desafios do curso Launchbase da Rocketseat
 
-## Desenvolvido com as ferramentas e recursos abaixo:
+## Desenvolvido utilizando:
 
 * Editor: VSCode
 * Versionamento: Git/GitHub
