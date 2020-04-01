@@ -34,6 +34,4 @@ server.get("/receita/:index", function(req, res) {
    return res.render("receita", { item: receitas[indexRecipe] })
 })
 
-server.listen(5000, function() {
-   console.log("OUVINDO PORT SERVIDOR")
-})
+server.listen(process.env.PORT || 5000)
