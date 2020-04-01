@@ -42,23 +42,30 @@
          color: $color-secondy-dark;
       }
    }
-   .items-list {
-      list-style: disc;
-      margin: 0;
-      padding: 0;
-      text-indent: 0;
-      margin-left: 20px;
-      .item {
-         font-size: 1.6rem;
+   .content {
+      display: none;
+      &.-active {
+         display: block;
+      }
+      .items-list {
+         list-style: disc;
+         margin: 0;
+         padding: 0;
+         text-indent: 0;
+         margin-left: 20px;
+         .item {
+            font-size: 1.6rem;
+            font-weight: normal;   
+            line-height: 2.6rem;
+          }
+      }
+      .info {
+         font-size: 1.8rem;
          font-weight: normal;   
          line-height: 2.6rem;
-       }
-   }
-   .info {
-      font-size: 1.8rem;
-      font-weight: normal;   
-      line-height: 2.6rem;
-      margin-bottom: 40px;
+         margin-bottom: 40px;
+      }
+   
    }
 
    @include mq(md) {

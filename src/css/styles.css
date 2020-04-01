@@ -405,7 +405,8 @@ img {
     .main-recipes .list-cards .item {
       width: 100%;
       max-width: 300px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      cursor: pointer; }
   @media (min-width: 576px) {
     .main-recipes .list-cards {
       flex-direction: row;
@@ -520,21 +521,25 @@ img {
     outline: none; }
     .main-detail .toggle:hover {
       color: #000000; }
-  .main-detail .items-list {
-    list-style: disc;
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    margin-left: 20px; }
-    .main-detail .items-list .item {
-      font-size: 1.6rem;
+  .main-detail .content {
+    display: none; }
+    .main-detail .content.-active {
+      display: block; }
+    .main-detail .content .items-list {
+      list-style: disc;
+      margin: 0;
+      padding: 0;
+      text-indent: 0;
+      margin-left: 20px; }
+      .main-detail .content .items-list .item {
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 2.6rem; }
+    .main-detail .content .info {
+      font-size: 1.8rem;
       font-weight: normal;
-      line-height: 2.6rem; }
-  .main-detail .info {
-    font-size: 1.8rem;
-    font-weight: normal;
-    line-height: 2.6rem;
-    margin-bottom: 40px; }
+      line-height: 2.6rem;
+      margin-bottom: 40px; }
   @media (min-width: 768px) {
     .main-detail .title {
       font-size: 3.6rem; }

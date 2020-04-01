@@ -11,29 +11,41 @@
          Ingredientes
          <button class="toggle">mostrar</button>
       </h2>
-      <ul class="items-list">
-         {% for ingredients in item.ingredients %}
+      <div class="content">
+         <ul class="items-list">
+            {% for ingredients in item.ingredients %}
             <li class="item">{{ingredients}}</li>
-         {% endfor %}
-      </ul>
+            {% endfor %}
+         </ul>
+      </div>
       <h2 class="subtitle">
          Modo de preparo
          <button class="toggle">mostrar</button>
       </h2>
-      <ul class="items-list">
-         {% for preparation in item.preparation %}
+      <div class="content">
+         <ul class="items-list">
+            {% for preparation in item.preparation %}
             <li class="item">{{preparation}}</li>
-         {% endfor %}
-      </ul>
-      <h2 class="subtitle">
-         Informações adicionais
-         <button class="toggle">mostrar</button>
-      </h2>
-      <p class="info">{{item.information.replace("\n\n","<br><br>")}}</p>
+            {% endfor %}
+         </ul>
+      </div>
+      {% if (item.information != "") %}
+         <h2 class="subtitle">
+            Informações adicionais
+            <button class="toggle">mostrar</button>
+         </h2>
+         <div class="content">
+            <p class="info">
+               {{item.information.replace("\n\n","<br><br>")}}
+            </p>
+         </div>
+      {% endif %}
    </article>
 </section>
 
 <!-- build:alljs -->
+<script src="/js/components/btn-toggle.js"></script> -->
 <!-- endbuild -->
 
 {% endblock %}
+
