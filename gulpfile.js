@@ -33,29 +33,9 @@ function compilaSASS() {
 // Minificar/concatenar/renomear arquivos JS Geral Dev
 // function optimizeJSGeneral() {
 //   return gulp
-//     .src(["src/js/components/**/*.js"])
+//     .src(["src/js/**/*.js"])
 //     .pipe(uglify())
 //     .pipe(concat("scripts.js"))
-//     .pipe(rename({ suffix: ".min" }))
-//     .pipe(gulp.dest("dist/js"));
-// }
-
-// Minificar/concatenar/renomear arquivos JS Carousel Dev
-// function optimizeJSCarousel() {
-//   return gulp
-//     .src(["src/js/carousel/**/*.js"])
-//     .pipe(uglify())
-//     .pipe(concat("carousel.js"))
-//     .pipe(rename({ suffix: ".min" }))
-//     .pipe(gulp.dest("dist/js"));
-// }
-
-// Minificar/concatenar/renomear arquivos JS Form Dev
-// function optimizeJSForm() {
-//   return gulp
-//     .src(["src/js/form/**/*.js"])
-//     .pipe(uglify())
-//     .pipe(concat("form.js"))
 //     .pipe(rename({ suffix: ".min" }))
 //     .pipe(gulp.dest("dist/js"));
 // }
@@ -76,28 +56,11 @@ function compilaSASS() {
 //       htmlreplace({
 //         allcss: "css/styles.min.css",
 //         alljs: "js/scripts.min.js",
-//         carousel: "js/carousel.min.js"
 //       })
 //     )
 //     .pipe(gulp.dest("dist/"));
 // }
 
-// Otimizar arquivos HTML
-// function optimizeHTML() {
-//   return gulp
-//     .src(["dist/*.html"])
-//     .pipe(htmlmin({ collapseWhitespace: true }))
-//     .pipe(gulp.dest("dist/"));
-// }
-
-// Copiar arquivos
-// function copyFiles() {
-//   return (
-//     gulp.src(["src/*.php"]).pipe(gulp.dest("dist/")),
-//     gulp.src(["src/phpmailer/**/*"]).pipe(gulp.dest("dist/phpmailer/")),
-//     gulp.src(["src/js/form/**/*"]).pipe(gulp.dest("dist/js/"))
-//   );
-// }
 
 // Agrupar tarefas a serem monitoradas
 function watch() {
@@ -110,12 +73,8 @@ const build = gulp.parallel(
   compilaSASS,
   // optimizeCSS,
   // optimizeJSGeneral,
-  // optimizeJSCarousel,
-  // optimizeJSForm,
   // optimizeIMG,
   // replaceHTML,
-  // optimizeHTML,
-  // copyFiles,
   watch
 );
 gulp.task("default", build);
